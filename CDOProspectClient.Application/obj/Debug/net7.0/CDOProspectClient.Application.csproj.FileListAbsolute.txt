@@ -1,0 +1,17 @@
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Application.deps.json
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Application.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Application.pdb
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.csproj.AssemblyReference.cache
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.AssemblyInfoInputs.cache
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.AssemblyInfo.cs
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.csproj.CoreCompileInputs.cache
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\refint\CDOProspectClient.Application.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.pdb
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\ref\CDOProspectClient.Application.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Infrastructure.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Infrastructure.pdb
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\obj\Debug\net7.0\CDOProspectClient.Application.csproj.CopyComplete
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Contracts.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Application\bin\Debug\net7.0\CDOProspectClient.Contracts.pdb

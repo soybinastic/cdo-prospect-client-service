@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kJVsZj2YWAkkM/H2k2pUDeg6UfI3hSgqE6IST9bh1h4=",
+  "Source": "CDOProspectClient.API",
+  "BasePath": "_content/CDOProspectClient.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

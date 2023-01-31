@@ -1,0 +1,12 @@
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\CDOProspectClient.Contracts.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\CDOProspectClient.Contracts.deps.json
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\CDOProspectClient.Contracts.pdb
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.AspNetCore.Http.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.Extensions.ObjectPool.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.Extensions.Options.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.Extensions.Primitives.dll
+C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Release\net7.0\publish\Microsoft.Net.Http.Headers.dll
