@@ -3171,11 +3171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
       "projectName": "CDOProspectClient.Infrastructure",
-      "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\soybi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soybi\\AppData\\Roaming\\NuGet\\NuGet.Config"

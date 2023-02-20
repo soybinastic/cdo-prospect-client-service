@@ -38,12 +38,13 @@ public class RequirementRepository : RequirementAbstractRepository
                 var queryEvaluation = await _context.Evaluations.FirstOrDefaultAsync(e => e.RequirementId == requirement.Id);
                 if(queryEvaluation is null)
                 {
-                    await _context.Evaluations.AddAsync(new Evaluation
+                    queryEvaluation = new Evaluation
                     {
                         Status = EnumSetupService.DefineEvaluationStatus(0),
                         RequirementId = requirement.Id,
                         Date = DateTimeOffset.Now
-                    });
+                    };
+                    await _context.Evaluations.AddAsync(queryEvaluation);
                 }
                 else
                 {
@@ -51,6 +52,34 @@ public class RequirementRepository : RequirementAbstractRepository
                 }
                 
                 await _context.SaveChangesAsync();
+                var notifEntityType = await _context.NotificationEntityTypes.FirstOrDefaultAsync(net => net.Id == 1);
+                if(notifEntityType is not null)
+                {
+                    var admin = await _context.Admins.FirstOrDefaultAsync();
+                    var agentRequirment = await _context.Requirements
+                        .Include(r => r.Agent)
+                        .FirstOrDefaultAsync(r => r.Id == requirementStatusRequest.RequirementId);
+
+                    if(admin is not null && agentRequirment is not null)
+                    {
+                        var notifObject = new NotificationObject
+                        {
+                            NotificationEntityType = notifEntityType,
+                            EntityId = queryEvaluation.Id
+                        };
+
+                        var notification = new Notification
+                        {
+                            NotificationObject = notifObject,
+                            NotifierId = admin.UserId,
+                            ActorId = agentRequirment.Agent!.UserId,
+                            DateNotified = DateTime.Now,
+                            Status = NotificationStatus.Delivered
+                        };
+                        await _context.Notifications.AddAsync(notification);
+                        await _context.SaveChangesAsync();
+                    }   
+                }
 
                 return (true, "Successfully Forwarded");
             }
@@ -79,6 +108,35 @@ public class RequirementRepository : RequirementAbstractRepository
 
                     evaluation.Status = EnumSetupService.DefineEvaluationStatus(2);
                     await _context.SaveChangesAsync();
+
+                    var notifEntityType = await _context.NotificationEntityTypes.FirstOrDefaultAsync(net => net.Id == 2);
+                    if(notifEntityType is not null)
+                    {
+                        var admin = await _context.Admins.FirstOrDefaultAsync();
+                        var agentRequirment = await _context.Requirements
+                            .Include(r => r.Agent)
+                            .FirstOrDefaultAsync(r => r.Id == requirementStatusRequest.RequirementId);
+
+                        if(admin is not null && agentRequirment is not null)
+                        {
+                            var notifObject = new NotificationObject
+                            {
+                                NotificationEntityType = notifEntityType,
+                                EntityId = evaluation.Id
+                            };
+
+                            var notification = new Notification
+                            {
+                                NotificationObject = notifObject,
+                                NotifierId = admin.UserId,
+                                ActorId = agentRequirment.Agent!.UserId,
+                                DateNotified = DateTime.Now,
+                                Status = NotificationStatus.Delivered
+                            };
+                            await _context.Notifications.AddAsync(notification);
+                            await _context.SaveChangesAsync();
+                        }   
+                    }
                     return (true, "Status updated to Cancelled");
                 }
                 catch (Exception ex)

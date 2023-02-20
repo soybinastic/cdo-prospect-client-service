@@ -47,6 +47,38 @@ public class EvaluationRepository : EvaluationAbstractRepository
             requirement.Status = status == EvaluationStatus.Approved ? Status.Approved : Status.Rejected;
 
             await _context.SaveChangesAsync();
+
+            // sending notification for evaluation
+            var agentRequirment = await _context.Requirements
+                .Include(r => r.Agent)
+                .FirstOrDefaultAsync(r => r.Id == evaluation.RequirementId);
+            
+            // tempoarary actor or notification creator (admin)
+            var admin = await _context.Admins.FirstOrDefaultAsync();
+
+            // get entity type for notification
+            var notifEntityType = await _context.NotificationEntityTypes
+                .FirstOrDefaultAsync(net => net.Id == (status == EvaluationStatus.Approved ? 3 : 4));
+
+            if(agentRequirment is not null && admin is not null && notifEntityType is not null)
+            {
+                var notifObject = new NotificationObject
+                {
+                    NotificationEntityType = notifEntityType,
+                    EntityId = evaluation.Id
+                };
+                var notification = new Notification
+                {
+                    NotificationObject = notifObject,
+                    ActorId = admin.UserId,
+                    NotifierId = agentRequirment.Agent!.UserId,
+                    DateNotified = DateTime.Now,
+                    Status = NotificationStatus.Delivered
+                };
+
+                await _context.Notifications.AddAsync(notification);
+                await _context.SaveChangesAsync();
+            }
             return (
                 true, 
                 $"{(status == EvaluationStatus.Approved ? "Successfully Approved!" : "Your request is rejected!")}");

@@ -160,6 +160,33 @@ namespace CDOProspectClient.Infrastructure.Migrations
                     b.ToTable("Briefings");
                 });
 
+            modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.Buyer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Occupation")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Buyers");
+                });
+
             modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.BuyerInformation", b =>
                 {
                     b.Property<int>("Id")
@@ -231,22 +258,15 @@ namespace CDOProspectClient.Infrastructure.Migrations
                     b.Property<int>("AppointmentId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Occupation")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int?>("BuyerId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AppointmentId")
                         .IsUnique();
+
+                    b.HasIndex("BuyerId");
 
                     b.ToTable("Clients");
                 });
@@ -437,6 +457,107 @@ namespace CDOProspectClient.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("NegativeDataBankRecord");
+                });
+
+            modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.Notification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("ActorId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DateNotified")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("NotificationObjectId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NotifierId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NotificationObjectId");
+
+                    b.ToTable("Notifications");
+                });
+
+            modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.NotificationEntityType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Entity")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NotificationMessage")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("NotificationEntityTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Entity = "Requirement",
+                            NotificationMessage = "Forwarded a requirement"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Entity = "Requirement",
+                            NotificationMessage = "Cancelled the forwarded requirement"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Entity = "Requirement",
+                            NotificationMessage = "Approved the requirement you have submit"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Entity = "Requirement",
+                            NotificationMessage = "Your requirement has been rejected"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Entity = "Appointment",
+                            NotificationMessage = "Someone has set you up with an appointment"
+                        });
+                });
+
+            modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.NotificationObject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("EntityId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NotificationEntityTypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NotificationEntityTypeId");
+
+                    b.ToTable("NotificationObject");
                 });
 
             modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.OverseasFilipinoWorker", b =>
@@ -1101,7 +1222,13 @@ namespace CDOProspectClient.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("CDOProspectClient.Infrastructure.Data.Models.Buyer", "Buyer")
+                        .WithMany()
+                        .HasForeignKey("BuyerId");
+
                     b.Navigation("Appointment");
+
+                    b.Navigation("Buyer");
                 });
 
             modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.Computation", b =>
@@ -1168,6 +1295,28 @@ namespace CDOProspectClient.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("BuyerInformation");
+                });
+
+            modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.Notification", b =>
+                {
+                    b.HasOne("CDOProspectClient.Infrastructure.Data.Models.NotificationObject", "NotificationObject")
+                        .WithMany()
+                        .HasForeignKey("NotificationObjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NotificationObject");
+                });
+
+            modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.NotificationObject", b =>
+                {
+                    b.HasOne("CDOProspectClient.Infrastructure.Data.Models.NotificationEntityType", "NotificationEntityType")
+                        .WithMany()
+                        .HasForeignKey("NotificationEntityTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NotificationEntityType");
                 });
 
             modelBuilder.Entity("CDOProspectClient.Infrastructure.Data.Models.OverseasFilipinoWorker", b =>

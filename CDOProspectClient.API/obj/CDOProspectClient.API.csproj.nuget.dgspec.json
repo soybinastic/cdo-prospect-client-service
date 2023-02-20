@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj": {}
+    "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj": {
+    "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj",
+        "projectUniqueName": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj",
         "projectName": "CDOProspectClient.API",
-        "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj",
+        "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\CDOProspectClient.API.csproj",
         "packagesPath": "C:\\Users\\soybi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\obj\\",
+        "outputPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soybi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,14 +26,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj": {
-                "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj"
+              "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj": {
+                "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj"
               },
-              "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj": {
-                "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj"
+              "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj": {
+                "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj"
               },
-              "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj"
+              "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj": {
+    "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj",
+        "projectUniqueName": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj",
         "projectName": "CDOProspectClient.Application",
-        "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj",
+        "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\CDOProspectClient.Application.csproj",
         "packagesPath": "C:\\Users\\soybi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\obj\\",
+        "outputPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soybi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -112,11 +112,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj": {
-                "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj"
+              "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj": {
+                "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj"
               },
-              "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj"
+              "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj": {
+    "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj",
         "projectName": "CDOProspectClient.Contracts",
-        "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj",
+        "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\CDOProspectClient.Contracts.csproj",
         "packagesPath": "C:\\Users\\soybi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soybi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj": {
+    "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
         "projectName": "CDOProspectClient.Infrastructure",
-        "projectPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\CDOProspectClient.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\soybi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soybi\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\soybi\\OneDrive\\Desktop\\cdo-prospect-client-system\\CDOProspectClientService\\CDOProspectClient.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soybi\\AppData\\Roaming\\NuGet\\NuGet.Config"

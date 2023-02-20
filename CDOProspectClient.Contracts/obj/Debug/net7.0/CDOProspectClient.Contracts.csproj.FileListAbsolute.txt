@@ -10,3 +10,15 @@ C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOPr
 C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\refint\CDOProspectClient.Contracts.dll
 C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.pdb
 C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\ref\CDOProspectClient.Contracts.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Debug\net7.0\CDOProspectClient.Contracts.deps.json
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Debug\net7.0\CDOProspectClient.Contracts.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\bin\Debug\net7.0\CDOProspectClient.Contracts.pdb
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.csproj.AssemblyReference.cache
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.AssemblyInfoInputs.cache
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.AssemblyInfo.cs
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\refint\CDOProspectClient.Contracts.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\CDOProspectClient.Contracts.pdb
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Contracts\obj\Debug\net7.0\ref\CDOProspectClient.Contracts.dll

@@ -10,3 +10,15 @@ C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOPr
 C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\refint\CDOProspectClient.Infrastructure.dll
 C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.pdb
 C:\Users\soybi\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\ref\CDOProspectClient.Infrastructure.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\bin\Debug\net7.0\CDOProspectClient.Infrastructure.deps.json
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\bin\Debug\net7.0\CDOProspectClient.Infrastructure.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\bin\Debug\net7.0\CDOProspectClient.Infrastructure.pdb
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.AssemblyInfo.cs
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\refint\CDOProspectClient.Infrastructure.dll
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\CDOProspectClient.Infrastructure.pdb
+C:\Users\soybi\OneDrive\Desktop\cdo-prospect-client-system\CDOProspectClientService\CDOProspectClient.Infrastructure\obj\Debug\net7.0\ref\CDOProspectClient.Infrastructure.dll

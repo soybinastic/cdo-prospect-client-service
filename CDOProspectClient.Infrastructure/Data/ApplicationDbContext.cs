@@ -20,6 +20,9 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Appointment> Appointments => Set<Appointment>();
     public DbSet<Client> Clients => Set<Client>();
     public DbSet<Admin> Admins => Set<Admin>();
+    public DbSet<Notification> Notifications => Set<Notification>();
+    public DbSet<NotificationEntityType> NotificationEntityTypes => Set<NotificationEntityType>();
+    public DbSet<Buyer> Buyers => Set<Buyer>();
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {}
 
@@ -36,6 +39,20 @@ public class ApplicationDbContext : IdentityDbContext
                 new PropertyType { Id = 1, Name = "Single Unit" }, 
                 new PropertyType { Id = 2, Name = "Combined Unit" } 
                 });
+        
+        builder.Entity<NotificationEntityType>()
+            .HasData(new NotificationEntityType[]
+            {
+                new NotificationEntityType { Id = 1, Entity = "Requirement", NotificationMessage = "Forwarded a requirement" },
+                new NotificationEntityType { Id = 2, Entity = "Requirement", NotificationMessage = "Cancelled the forwarded requirement" },
+                new NotificationEntityType { Id = 3, Entity = "Requirement", NotificationMessage = "Approved the requirement you have submit" },
+                new NotificationEntityType { Id = 4, Entity = "Requirement", NotificationMessage = "Your requirement has been rejected" },
+                new NotificationEntityType { Id = 5, Entity = "Appointment", NotificationMessage = "Someone has set you up with an appointment" }
+            });
+        
+        builder.Entity<Notification>()
+            .Property(n => n.Status)
+            .HasConversion<string>();
 
         builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
         base.OnModelCreating(builder);

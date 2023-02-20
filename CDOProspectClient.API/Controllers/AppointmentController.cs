@@ -1,5 +1,6 @@
 using CDOProspectClient.Application.Repositories.AppointmentRepo;
 using CDOProspectClient.Contracts.Appointment;
+using CDOProspectClient.Infrastructure.Data;
 using CDOProspectClient.Infrastructure.Data.Models;
 using CDOProspectClient.Infrastructure.Helpers.EnumSetup;
 using Microsoft.EntityFrameworkCore;
@@ -10,15 +11,27 @@ namespace CDOProspectClient.API.Controllers;
 public class AppointmentController : ControllerBase
 {
     private readonly AppointmentAbstractRepository _appointmentRepository;
-    public AppointmentController(AppointmentAbstractRepository appointmentRepository)
+    private readonly ApplicationDbContext _context;
+    public AppointmentController(
+        AppointmentAbstractRepository appointmentRepository,
+        ApplicationDbContext context)
     {
         _appointmentRepository = appointmentRepository;
+        _context = context;
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(
+        [FromQuery(Name = "agentId")]int agentId = 0
+    )
     {
         var results = await _appointmentRepository.FindAll();
+        if(agentId != 0)
+        {
+            results = results.AsQueryable()
+                .Where(a => a.AgentId == agentId)
+                .ToList();
+        }
         var json = JsonSerializerSetup.Serialize(results);
         return Ok(json);
     }
@@ -46,8 +59,12 @@ public class AppointmentController : ControllerBase
 
         var agent = await _appointmentRepository._context.Agents
             .FirstOrDefaultAsync(a => a.Id == request.AgentId);
+        
+        var buyer = await _context.Buyers.FirstOrDefaultAsync(b => b.Id == request.BuyerId);
 
         if(agent is null) return BadRequest(new { Message = "Agent not found" });
+
+        if(buyer is null) return BadRequest(new { Message = "Buyer not found" });
 
         var newAppointment = new Appointment
         {
@@ -55,14 +72,18 @@ public class AppointmentController : ControllerBase
             DateAppointment = request.AppointmentDate,
             Status = AppointmentStatus.Pending
         };
-
         var newClient = new Client
         {
             Appointment = newAppointment,
-            Name = request.Client.Name,
-            PhoneNumber = request.Client.PhoneNumber,
-            Occupation = request.Client.Occupation
+            Buyer = buyer!
         };
+        // var newClient = new Client
+        // {
+        //     Appointment = newAppointment,
+        //     Name = request.Client.Name,
+        //     PhoneNumber = request.Client.PhoneNumber,
+        //     Occupation = request.Client.Occupation
+        // };
 
         newAppointment.Client = newClient;
         var createdAppointment = await _appointmentRepository.Create(newAppointment);
